@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,white);
+}
+
+h1{
+    color: black;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.container{
+    width: 400px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px gray;
+}
+input[type="email"],
+input[type="password"]{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid rgb(8, 8, 8);
+    border-radius: 10px;
+    color: rgb(2, 2, 2);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0,0.5);
+    box-shadow:10px 10px 20px rgba(0,0,0,0.3);
+}
+input[type="submit"]{
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+h3{
+    margin-top: 10px;
+}
+
+label{
+    margin: 0 5px;
+}
+.page{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.robot{
+    width: 300PX;
+    height: auto;
+    position: absolute;
+    left: -0%;
+    top: 30%;
+    animation: wave 2s infinite ;
+    transform-origin: center;
+}
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); } /* الروبوت كيميل شوية */
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
